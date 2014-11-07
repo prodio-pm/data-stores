@@ -19,5 +19,8 @@
   "devDependencies": {
     "mocha": "^2.0.1",
     "prodio-config": "0.0.1"
+  },
+  "dependencies": {
+    "sift": "^0.1.0"
   }
 }
