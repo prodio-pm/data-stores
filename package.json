@@ -1,6 +1,6 @@
 {
   "name": "prodio-stores",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Generic stores for prodio",
   "main": "index.js",
   "scripts": {
