@@ -17,10 +17,12 @@
   },
   "homepage": "https://github.com/prodio-pm/data-stores",
   "devDependencies": {
+    "async": "^0.9.0",
     "mocha": "^2.0.1",
     "prodio-config": "0.0.1"
   },
   "dependencies": {
+    "prodio-memory-store": "0.0.1",
     "sift": "^0.1.0"
   }
 }
