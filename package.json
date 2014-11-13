@@ -22,7 +22,7 @@
     "prodio-config": "0.0.1"
   },
   "dependencies": {
-    "prodio-memory-store": "0.0.1",
+    "prodio-memory-store": "0.0.3",
     "sift": "^0.1.0"
   }
 }
