@@ -134,6 +134,28 @@ describe('Store', function(){
         });
       });
     });
+    it('Should filter records properly', function(done){
+      var filter = {
+        "$or": [
+          {
+            "foo": {
+              "$regex": "bar 1"
+            }
+          },
+          {
+            "bar": {
+              "$regex": "none"
+            }
+          }
+        ]
+      };
+      var test = new Store(TESTS_COLLECTION);
+      test.asArray({filter: filter}, function(err, result){
+        assert(!err, 'Test store threw an error: '+err);
+        assert(result.length===2, 'Wrong number of records returned');
+        done();
+      });
+    });
   });
   describe('Cleanup', function(){
     it('Should let us delete all records', function(done){
